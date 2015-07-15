@@ -23,7 +23,8 @@
 			}
 		});
 		$('.lvl2 a').on('click', function(){
-			var frame = "project-mark/"+$(this).attr('data-iframe');	
+			var frame = "/project-mark/"+$(this).attr('data-iframe');
+			alert("Loading '"+frame+"'");
 			$('#content')
 			.load(frame)
 			.addClass("active");
