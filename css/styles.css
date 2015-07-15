@@ -120,7 +120,7 @@ html, body, header {
 .active .lvl2 a {
 	transform: translate(0, 0) scale(1);
 }
-#content {
+#frame {
 	position: absolute;
 	top: 25%;
 	left: 25%;
@@ -147,7 +147,7 @@ html, body, header {
 	opacity: .75;
 	visibility: visible;
 }
-#content.active {
+#frame.active {
 	opacity: 1;
 	visibility: visible;
 }
