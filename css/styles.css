@@ -1,0 +1,174 @@
+html, body, header {
+	height: 100%;
+	background: #FFFCF7;
+}
+.container {
+	margin: 0 auto;
+	width: 60%;
+}
+.menu {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+.menu .lvl1.clickable {
+	display: block;
+	font-size: 25px;
+	color: #FFFCF7;
+	text-decoration: none;
+	font-size: 50px;
+	background: #F59676;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 50px;
+	width: 50px;
+	border: #fff 5px solid;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 50px;
+	border: #fff 5px solid;
+	transform: scale(1);
+	transition: transform 300ms, background 300ms, color 300ms, width 0.3s, height 0.3s, border 0.3s;
+	z-index: 600;
+}
+.menu a.lvl1:hover {
+	border: #F59676 5px solid;
+	transform: scale(1.2);
+	background: #fff;
+	color: #F59676;
+}
+.rawmaterials {
+	position: absolute;
+	bottom: 20%;
+	left: 10%;
+}
+.manufacture {
+	position: absolute;
+	bottom: 28%;
+	left: 30%;
+}
+.transport {
+	position: absolute;
+	bottom: 38%;
+	left: 48%;
+}
+.warhouse {
+	position: absolute;
+	bottom: 50%;
+	left: 63%;
+}
+.retail {
+	position: absolute;
+	bottom: 65%;
+	left: 80%;
+}
+.overview {
+	position: absolute;
+	width: 25%;
+	padding: 10px;
+	background: #fff;
+}
+.tab {
+	position: absolute;
+	bottom: 35px;
+	left: -80px;
+	background: #F59676;
+	padding: 15px 15px 45px 15px;
+	color: #fff;
+	border-radius: 5px;
+	z-index: 500;
+	width: 200px;
+	transform-origin: 50% 100%;
+	transform: Scale(0);
+	transition: transform 0.3s;
+}
+.tab.active {
+	transform: Scale(1);
+}
+.tab.bot {
+	bottom: initial;
+	padding: 45px 15px 15px 15px;
+	top: -35px;
+	transform-origin: 50% 0%;
+}
+.lvl2 {
+	position: absolute;
+	left: 0;
+	top: 100%;
+}
+.lvl2.bot {	
+	top: initial;
+	bottom: 100%;
+	margin-bottom: 5px;
+}
+.lvl2 a {
+	display: block;
+	width: 200px;
+	padding: 15px;
+	left: 0;
+	bottom: 0;
+	color: #fff;
+	margin-top: 5px;
+	background: orange;	
+	transform: translate(0, -50px) scale(0);
+	transition: transform 0.3s;
+	transition-delay: 0.3s;
+	z-index: 300;
+}
+.active .lvl2 a {
+	transform: translate(0, 0) scale(1);
+}
+#content {
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	width: 50%;
+	height: 50%;
+	border: #F59676 10px solid;
+	background: #F59676;
+	border-radius: 10px;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity .3s;
+	z-index: 1000;
+}
+#cover {
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+	opacity: 0;
+	visibility: hidden;
+	background: #000;
+	z-index: 999;
+	transition: opacity .3;
+}
+#cover.active {
+	opacity: .75;
+	visibility: visible;
+}
+#content.active {
+	opacity: 1;
+	visibility: visible;
+}
+#closecontent {
+	display: block;
+	font-size: 25px;
+	color: #FFFCF7;
+	text-decoration: none;
+	font-size: 50px;
+	background: #F59676;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 50px;
+	width: 50px;
+	border: #fff 5px solid;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 50px;
+	border: #fff 5px solid;
+	transform: scale(1);
+	transition: transform 300ms, background 300ms, color 300ms, width 0.3s, height 0.3s, border 0.3s;
+	z-index: 1000;
+}
