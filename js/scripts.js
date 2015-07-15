@@ -24,9 +24,8 @@
 		});
 		$('.lvl2 a').on('click', function(){
 			var frame = "/project-mark/"+$(this).attr('data-iframe');
-			alert("Loading '"+frame+"'");
 			$('#content').load(frame)
-			$('frame').addClass("active");
+			$('#frame').addClass("active");
 			$("#cover").addClass("active");
 		});
 		$('#closecontent').on('click', function(){
