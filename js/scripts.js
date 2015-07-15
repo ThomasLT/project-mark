@@ -6,8 +6,10 @@
 			if (offset < height) {
 				$(this).parent().children(".tab").addClass("bot");      
 				$(this).parent().children(".tab").children(".lvl2").addClass("bot");  
-			}
-			
+				var arrow = $(this).parent().children('.tab').children('.lvl2').children('h2');
+				arrow.appendTo(arrow.parent());
+				arrow.html("▲");
+			}	
 			var Overview = $(this).attr('data-tab');
 			var Overview = "."+Overview;
 			var object = $(this);
