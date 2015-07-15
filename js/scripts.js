@@ -23,7 +23,7 @@
 			}
 		});
 		$('.lvl2 a').on('click', function(){
-			var frame = "/"+$(this).attr('data-iframe');	
+			var frame = ""+$(this).attr('data-iframe');	
 			$('#content')
 			.load(frame)
 			.addClass("active");
