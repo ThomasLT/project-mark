@@ -133,6 +133,12 @@ html, body {
 .active .lvl2 a, .active .lvl2 h2 {
 	transform: translate(0, 0) scale(1);
 }
+p {
+	font-size: 16px;
+	margin: 0%;
+	margin-before: 0;
+	margin-after: 0;
+}
 #frame {
 	position: absolute;
 	top: 25%;
