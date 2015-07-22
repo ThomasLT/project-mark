@@ -13,9 +13,15 @@ html, body {
 }
 .menu {
 	position: relative;
-	width: 100%;
-	height: 100%;
+	width: 95%;
+	height: 95%;
+	max-width: 960px;
+	max-height: 475px;
 	margin: 0 auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 .menu .lvl1.clickable {
 	display: block;
@@ -46,28 +52,29 @@ html, body {
 }
 .rawmaterials {
 	position: absolute;
-	bottom: 25%;
-	left: 25%;
+	bottom: 10%;
+	left: 0%;
 }
 .manufacture {
 	position: absolute;
-	bottom: 28%;
-	left: 35%;
+	bottom: 15%;
+	left: 20%;
 }
 .transport {
 	position: absolute;
-	bottom: 38%;
-	left: 48%;
+	bottom: 30%;
+	left: 45%;
 }
 .warhouse {
 	position: absolute;
-	bottom: 50%;
-	left: 58%;
+	bottom: 46%;
+	left: 67%;
 }
 .retail {
 	position: absolute;
-	bottom: 64%;
-	left: 68%;
+	left: 100%;
+	bottom: 65%;
+	transform: translate(-115px);
 }
 .overview {
 	position: absolute;
@@ -192,9 +199,9 @@ html, body {
   bottom: 0;
   left: 0;
   right: 0;
-  width: 25%;
+  width: 480px;
   height: 0;
-  padding-bottom: 25%;
+  padding-bottom: 480px;
   margin: auto;
   background-color: #fff;
   background-image: url('https://dl.dropboxusercontent.com/u/3474189/world.svg');
