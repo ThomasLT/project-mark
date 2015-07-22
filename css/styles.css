@@ -3,7 +3,7 @@ header {
 	line-height: 10px;
 	padding: 10px;
 }
-html, body, header {
+html, body {
 	height: 100%;
 	background: #FFFCF7;
 }
