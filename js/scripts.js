@@ -3,7 +3,7 @@
 			var offset = $(this).offset().top;
 			var height = $(window).height();
 			alert(height);
-			var height =  height/2
+			var height =  height/2;
 			alert(height);
 			alert(offset);
 			if (offset < height) {
