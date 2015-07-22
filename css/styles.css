@@ -207,16 +207,8 @@ html, body, header {
 
 @keyframes earth {
   from {
-<<<<<<< HEAD
     background-position: 0% 50%;
   }
   to {
     background-position: 200% 50%;
-=======
-    background-position: 0 0;
-  }
-  to {
-    background-position: 200% 0;
->>>>>>> parent of f64cff3... chane
-  }
 }
