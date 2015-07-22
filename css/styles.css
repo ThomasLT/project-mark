@@ -77,7 +77,6 @@ html, body, header {
 }
 .tab {
 	position: absolute;
-	bottom: 35px;
 	left: -50px;
 	background: #F59676;
 	padding: 15px 15px 80px 15px;
@@ -92,20 +91,22 @@ html, body, header {
 .tab.active {
 	transform: Scale(1);
 }
+.tab.top {
+	bottom: 35px;
+}
 .tab.bot {
-	bottom: initial;
 	padding: 80px 15px 15px 15px;
 	top: -75px;
 	transform-origin: 50% 0%;
 }
-.lvl2 {
+.lvl2.top{
 	position: absolute;
 	left: 0;
 	top: 100%;
 }
 .lvl2.bot {	
-	top: initial;
 	bottom: 100%;
+	left: 0;
 	margin-bottom: 5px;
 }
 .lvl2 a, .lvl2 h2 {
@@ -203,13 +204,14 @@ html, body, header {
   border-radius: 50%;
   animation: earth 8s linear infinite;
   box-shadow: -35px -50px 200px 10px rgba(0, 0, 0, .8) inset;
+  opacity: .5;
 }
 
 @keyframes earth {
   from {
-    background-position: 0 0;
+    background-position: 0% 0%;
   }
   to {
-    background-position: 200% 0;
+    background-position: 200% 0%;
   }
 }
