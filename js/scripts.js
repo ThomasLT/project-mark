@@ -1,11 +1,9 @@
     $(document).ready(function(){
         $('.lvl1').on('click', function(){
 			var offset = $(this).offset().top;
-			var height = $(window).height();
-			alert(height);
+			var offset = offset+50;
+			var height = $('html').height();
 			var height =  height/2;
-			alert(height);
-			alert(offset);
 			if (offset < height) {
 				$(this).parent().children(".tab").addClass("bot");      
 				$(this).parent().children(".tab").children(".lvl2").addClass("bot");  
