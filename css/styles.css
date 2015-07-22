@@ -87,7 +87,7 @@ html, body {
 	bottom: 35px;
 	left: -50px;
 	background: #F59676;
-	padding: 15px 15px 80px 15px;
+	padding: 15px 15px 85px 15px;
 	color: #fff;
 	border-radius: 5px;
 	z-index: 500;
@@ -101,7 +101,7 @@ html, body {
 }
 .tab.bot {
 	bottom: initial;
-	padding: 80px 15px 15px 15px;
+	padding: 85px 15px 15px 15px;
 	top: -75px;
 	transform-origin: 50% 0%;
 }
@@ -132,12 +132,6 @@ html, body {
 .lvl2 h2 { margin: 0; font-size: 28px;   font-size: 16px; 	margin-top: 5px;}
 .active .lvl2 a, .active .lvl2 h2 {
 	transform: translate(0, 0) scale(1);
-}
-p {
-	font-size: 16px;
-	margin: 0%;
-	margin-before: 0;
-	margin-after: 0;
 }
 #frame {
 	position: absolute;
