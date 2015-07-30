@@ -102,21 +102,21 @@ html, body {
 	position: absolute;
 	top: 10px;
 }
-.tab.active .rawmaterials:hover::before {
-	background: red;
-}
-.manufacture:hover::before {
-	content:"Manufacture";
-}
-.transport:hover::before {
-	content:"Transport";
-}
-.warhouse:hover::before {
-	content:"Warehouse";
-}
-.retail:hover::before {
-	content:"Retail";
-}
+	/*.tab.active .rawmaterials:hover::before {
+		background: red;
+	}
+	.manufacture:hover::before {
+		content:"Manufacture";
+	}
+	.transport:hover::before {
+		content:"Transport";
+	}
+	.warhouse:hover::before {
+		content:"Warehouse";
+	}
+	.retail:hover::before {
+		content:"Retail";
+	}*/
 .tab {
 	position: absolute;
 	bottom: 35px;
