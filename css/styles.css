@@ -92,7 +92,7 @@ html, body {
 	padding: 10px;
 	background: #fff;
 }
-.rawmaterials:hover::before {
+/*.rawmaterials:hover::before {
 	content:"Raw Materials";
 	background: #F59676;
 	white-space: nowrap;
