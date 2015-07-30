@@ -44,6 +44,16 @@ html, body {
 	transition: transform 300ms, background 300ms, color 300ms, width 0.3s, height 0.3s, border 0.3s;
 	z-index: 600;
 }
+.menu .lvl1.clickable .icon {
+	width: 85px;
+	height: 85px;
+	margin: 5px;
+	fill: #fff;
+	transition: fill .3ms;
+}
+.menu .lvl1:hover .icon{
+	fill: #F59676;
+}
 .menu a.lvl1:hover {
 	border: #F59676 10px solid;
 	transform: scale(1.2);
@@ -81,6 +91,31 @@ html, body {
 	width: 25%;
 	padding: 10px;
 	background: #fff;
+}
+.rawmaterials:hover::before {
+	content:"Raw Materials";
+	background: #F59676;
+	white-space: nowrap;
+	color: #fff;
+	font-size: 24px;
+	padding: 15px;
+	position: absolute;
+	top: 10px;
+}
+.tab.active .rawmaterials:hover::before {
+	background: red;
+}
+.manufacture:hover::before {
+	content:"Manufacture";
+}
+.transport:hover::before {
+	content:"Transport";
+}
+.warhouse:hover::before {
+	content:"Warehouse";
+}
+.retail:hover::before {
+	content:"Retail";
 }
 .tab {
 	position: absolute;
