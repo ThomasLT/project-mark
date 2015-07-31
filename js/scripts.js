@@ -1,4 +1,10 @@
     $(document).ready(function(){
+		/*$('#close').click( function(){
+			alert('clicked');
+		});*/
+		var q = function() { $(".active").removeClass("active"); }; 
+		$('.lvl1, .tab, .lvl2, #cover, #content').clickoutside(q);
+
         $('.lvl1').on('click', function(){
 			var offset = $(this).offset().top;
 			var offset = offset+50;
@@ -15,25 +21,28 @@
 			var Overview = "."+Overview;
 			var object = $(this);
 			if ($(this).hasClass("active")) {
-				$(".tab").removeClass("active");
-				$(".lvl1.clickable").removeClass("active");
+				$(".active").removeClass("active");
 			} else {	
 				$(".tab").removeClass("active");
 				$(".lvl1.clickable").removeClass("active");
 				$(Overview).addClass("active");
 				$(this).addClass("active");	
 				$(this).parent().children(".tab").addClass("active");       
+				$(this).parent().addClass("active");
+				$(this).parent().children(".tab").focus();
 			}
 		});
+		
+		
+		
 		$('.lvl2 a').on('click', function(){
 			var frame = "/project-mark/"+$(this).attr('data-frame');
 			$('#content').load(frame)
 			$('#frame').addClass("active");
 			$("#cover").addClass("active");
 		});
-		$('#closecontent').on('click', function(){
+		$('#closecontent,#cover').on('click', function(){
 			$('#frame').removeClass("active");
 			$("#cover").removeClass("active");
 		});
-		
     })
