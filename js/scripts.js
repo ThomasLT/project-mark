@@ -1,5 +1,6 @@
     $(document).ready(function(){
 		alert('Version 1.1');
+		$('#version').load("Version 1.1")
 		/*$('#close').click( function(){
 			alert('clicked');
 		});*/
