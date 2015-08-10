@@ -5,7 +5,7 @@ header {
 }
 html, body {
 	height: 100%;
-	background: #FFFCF7;
+	background: #FFFCF7;CF7;
 	z-index: 1;
 }
 #content:first-child() {
@@ -37,7 +37,7 @@ html, body {
 .menu .lvl1.clickable {
 	display: block;
 	font-size: 25px;
-	color: #FFFCF7;
+	color: #FFFCF7;CF7;
 	text-decoration: none;
 	font-size: 50px;
 	background: #F59676;
@@ -46,11 +46,11 @@ html, body {
 	left: 0;
 	height: 100px;
 	width: 100px;
-	border: #fff 5px solid;
+	border: #FFFCF7; 5px solid;
 	border-radius: 50%;
 	text-align: center;
 	line-height: 100px;
-	border: #fff 10px solid;
+	border: #FFFCF7; 10px solid;
 	transform: scale(1);
 	transition: transform 300ms, background 300ms, color 300ms, width 0.3s, height 0.3s, border 0.3s;
 	z-index: 600;
@@ -59,7 +59,7 @@ html, body {
 	width: 85px;
 	height: 85px;
 	margin: 5px;
-	fill: #fff;
+	fill: #FFFCF7;;
 	transition: fill .3ms;
 }
 .menu .lvl1:hover .icon{
@@ -68,7 +68,7 @@ html, body {
 .menu a.lvl1:hover {
 	border: #F59676 10px solid;
 	transform: scale(1.2);
-	background: #fff;
+	background: #FFFCF7;;
 	color: #F59676;
 }
 .rawmaterials {
@@ -101,13 +101,13 @@ html, body {
 	position: absolute;
 	width: 25%;
 	padding: 10px;
-	background: #fff;
+	background: #FFFCF7;;
 }
 /*.rawmaterials:hover::before {
 	content:"Raw Materials";
 	background: #F59676;
 	white-space: nowrap;
-	color: #fff;
+	color: #FFFCF7;;
 	font-size: 24px;
 	padding: 15px;
 	position: absolute;
@@ -135,7 +135,7 @@ html, body {
 	height: 400px;
 	background: #F59676;
 	padding: 15px 15px 85px 15px;
-	color: #fff;
+	color: #FFFCF7;;
 	border-radius: 5px;
 	z-index: 500;
 	width: 200px;
@@ -170,18 +170,21 @@ html, body {
 	padding: 15px;
 	left: 0;
 	bottom: 0;
-	color: #fff;
+	color: #FFFCF7;;
 	margin-top: 5px;
 	background: #2FA88D;	
 	transform: translate(0, -50px) scale(0);
 	transition: transform 0.3s;
 	transition-delay: 0.3s;
 	z-index: 300;
-	transform: background .3s, margin .3s;
+	transition: background .3s, margin .3s;
+	text-decoration: none;
+	font-weight: 700;
 }
 .lvl2 a:hover {
 	background: #76F5D8;
 	margin-left: 10px;
+	color: #1C110E;
 } 
 .lvl2 h2 { margin: 0; font-size: 28px;   font-size: 16px; 	margin-top: 5px;}
 .active .lvl2 a, .active .lvl2 h2 {
@@ -219,19 +222,20 @@ html, body {
 	visibility: visible;
 }
 #content {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: white;
-  border-radius: 5px;
-  padding: 10px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-radius: 5px;
+	padding: 10px;
+	background: #FFFCF7;CF7;
+	color: #1C110E;
 }
 #closecontent {
 	display: block;
 	font-size: 25px;
-	color: #FFFCF7;
+	color: #FFFCF7;CF7;
 	text-decoration: none;
 	font-size: 50px;
 	background: #F59676;
@@ -240,11 +244,11 @@ html, body {
 	right: -35px;
 	height: 50px;
 	width: 50px;
-	border: #fff 5px solid;
+	border: #FFFCF7; 5px solid;
 	border-radius: 50%;
 	text-align: center;
 	line-height: 50px;
-	border: #fff 5px solid;
+	border: #FFFCF7; 5px solid;
 	transform: scale(1);
 	transition: transform 300ms, background 300ms, color 300ms, width 0.3s, height 0.3s, border 0.3s;
 	z-index: 1000;
@@ -260,7 +264,7 @@ html, body {
   height: 0;
   padding-bottom: 480px;
   margin: auto;
-  background-color: #fff;
+  background-color: #FFFCF7;;
   background-image: url('https://dl.dropboxusercontent.com/u/3474189/world.svg');
   background-size: 200%;
   background-repeat: repeat;
