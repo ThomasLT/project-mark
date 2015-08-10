@@ -1,10 +1,5 @@
     $(document).ready(function(){
 		$('#version').html("Version 0.11")
-		/*$('#close').click( function(){
-			alert('clicked');
-		});*/
-		var q = function() { $(".active").removeClass("active"); }; 
-		$('.lvl1, .tab, .lvl2, #cover, #content').clickoutside(q);
 
         $('.lvl1').on('click', function(){
 			var offset = $(this).offset().top;
@@ -36,14 +31,27 @@
 			}
 		});
 		
+		var q = function() { $(".active").removeClass("active"); }; 		
+		$('.lvl1, .tab, .lvl2, #cover, #content').clickoutside(q);
+		
 		$('.lvl2 a').on('click', function(){
 			var frame = "/project-mark/"+$(this).attr('data-frame');
-			$('#content').load(frame)
+			
+			$('#content').load(frame, function( response, status, xhr ) {
+				if ( status == "error" ) {
+					var msg = "Sorry something went wrong ";
+					$( "#content" ).html( msg + xhr.status + " " + xhr.statusText );
+				}
+			});
+			
 			$('#frame').addClass("active");
 			$("#cover").addClass("active");
 		});
 		$('#closecontent,#cover').on('click', function(){
+			$('#content').html("Loading")
 			$('#frame').removeClass("active");
 			$("#cover").removeClass("active");
 		});
     })
+	
+	
