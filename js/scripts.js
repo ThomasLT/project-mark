@@ -17,7 +17,9 @@
 				var arrow = $(this).parent().children('.tab').children('.lvl2').children('h2');
 				arrow.appendTo(arrow.parent());
 				arrow.html("▲");
-			}	
+			} else {     
+				$(this).parent().children(".tab").children(".lvl2").addClass("bot");
+			}
 			var Overview = $(this).attr('data-tab');
 			var Overview = "."+Overview;
 			var object = $(this);
@@ -33,8 +35,6 @@
 				$(this).parent().children(".tab").focus();
 			}
 		});
-		
-		
 		
 		$('.lvl2 a').on('click', function(){
 			var frame = "/project-mark/"+$(this).attr('data-frame');
