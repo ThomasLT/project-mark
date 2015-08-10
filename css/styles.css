@@ -160,7 +160,7 @@ html, body {
 }
 .lvl2.top {	
 	top: initial;
-	bottom: 0%;
+	bottom: 100%;
 	margin-bottom: 5px;
 }
 .lvl2 a, .lvl2 h2 {
