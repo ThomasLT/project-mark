@@ -59,7 +59,7 @@ html, body {
 	width: 85px;
 	height: 85px;
 	margin: 5px;
-	fill: #FFFCF7;;
+	fill: #FFFCF7;
 	transition: fill .3ms;
 }
 .menu .lvl1:hover .icon{
