@@ -1,5 +1,5 @@
     $(document).ready(function(){
-		$('#version').html("Version 1.11")
+		$('#version').html("Version 0.11")
 		/*$('#close').click( function(){
 			alert('clicked');
 		});*/
