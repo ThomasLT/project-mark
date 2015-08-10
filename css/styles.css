@@ -1,6 +1,19 @@
-html, body, header {
+header {
+	position:absolute;
+	line-height: 10px;
+	padding: 10px;
+}
+html, body {
 	height: 100%;
 	background: #FFFCF7;
+	z-index: 1;
+}
+#close {
+	position:absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 }
 .container {
 	margin: 0 auto;
@@ -8,9 +21,15 @@ html, body, header {
 }
 .menu {
 	position: relative;
-	width: 100%;
-	height: 100%;
+	width: 95%;
+	height: 95%;
+	max-width: 960px;
+	max-height: 475px;
 	margin: 0 auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 .menu .lvl1.clickable {
 	display: block;
@@ -22,47 +41,58 @@ html, body, header {
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	height: 50px;
-	width: 50px;
+	height: 100px;
+	width: 100px;
 	border: #fff 5px solid;
 	border-radius: 50%;
 	text-align: center;
-	line-height: 50px;
-	border: #fff 5px solid;
+	line-height: 100px;
+	border: #fff 10px solid;
 	transform: scale(1);
 	transition: transform 300ms, background 300ms, color 300ms, width 0.3s, height 0.3s, border 0.3s;
 	z-index: 600;
 }
+.menu .lvl1.clickable .icon {
+	width: 85px;
+	height: 85px;
+	margin: 5px;
+	fill: #fff;
+	transition: fill .3ms;
+}
+.menu .lvl1:hover .icon{
+	fill: #F59676;
+}
 .menu a.lvl1:hover {
-	border: #F59676 5px solid;
+	border: #F59676 10px solid;
 	transform: scale(1.2);
 	background: #fff;
 	color: #F59676;
 }
 .rawmaterials {
 	position: absolute;
-	bottom: 20%;
-	left: 10%;
+	bottom: 10%;
+	left: 0%;
 }
 .manufacture {
 	position: absolute;
-	bottom: 28%;
-	left: 30%;
+	bottom: 15%;
+	left: 20%;
 }
 .transport {
 	position: absolute;
-	bottom: 38%;
-	left: 48%;
+	bottom: 30%;
+	left: 45%;
 }
 .warhouse {
 	position: absolute;
-	bottom: 50%;
-	left: 63%;
+	bottom: 46%;
+	left: 67%;
 }
 .retail {
 	position: absolute;
+	left: 100%;
 	bottom: 65%;
-	left: 80%;
+	transform: translate(-115px);
 }
 .overview {
 	position: absolute;
@@ -70,12 +100,37 @@ html, body, header {
 	padding: 10px;
 	background: #fff;
 }
+/*.rawmaterials:hover::before {
+	content:"Raw Materials";
+	background: #F59676;
+	white-space: nowrap;
+	color: #fff;
+	font-size: 24px;
+	padding: 15px;
+	position: absolute;
+	top: 10px;
+}
+	.tab.active .rawmaterials:hover::before {
+		background: red;
+	}
+	.manufacture:hover::before {
+		content:"Manufacture";
+	}
+	.transport:hover::before {
+		content:"Transport";
+	}
+	.warhouse:hover::before {
+		content:"Warehouse";
+	}
+	.retail:hover::before {
+		content:"Retail";
+	}*/
 .tab {
 	position: absolute;
 	bottom: 35px;
-	left: -80px;
+	left: -50px;
 	background: #F59676;
-	padding: 15px 15px 45px 15px;
+	padding: 15px 15px 85px 15px;
 	color: #fff;
 	border-radius: 5px;
 	z-index: 500;
@@ -89,8 +144,8 @@ html, body, header {
 }
 .tab.bot {
 	bottom: initial;
-	padding: 45px 15px 15px 15px;
-	top: -35px;
+	padding: 85px 15px 15px 15px;
+	top: -75px;
 	transform-origin: 50% 0%;
 }
 .lvl2 {
@@ -103,7 +158,12 @@ html, body, header {
 	bottom: 100%;
 	margin-bottom: 5px;
 }
-.lvl2 a {
+.lvl2.top {	
+	top: initial;
+	bottom: 0%;
+	margin-bottom: 5px;
+}
+.lvl2 a, .lvl2 h2 {
 	display: block;
 	width: 200px;
 	padding: 15px;
@@ -117,10 +177,11 @@ html, body, header {
 	transition-delay: 0.3s;
 	z-index: 300;
 }
-.active .lvl2 a {
+.lvl2 h2 { margin: 0; font-size: 28px;   font-size: 16px; 	margin-top: 5px;}
+.active .lvl2 a, .active .lvl2 h2 {
 	transform: translate(0, 0) scale(1);
 }
-#content {
+#frame {
 	position: absolute;
 	top: 25%;
 	left: 25%;
@@ -147,9 +208,16 @@ html, body, header {
 	opacity: .75;
 	visibility: visible;
 }
-#content.active {
+#frame.active {
 	opacity: 1;
 	visibility: visible;
+}
+#content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 #closecontent {
 	display: block;
@@ -159,8 +227,8 @@ html, body, header {
 	font-size: 50px;
 	background: #F59676;
 	position: absolute;
-	top: 0;
-	right: 0;
+	top: -35px;
+	right: -35px;
 	height: 50px;
 	width: 50px;
 	border: #fff 5px solid;
@@ -171,4 +239,31 @@ html, body, header {
 	transform: scale(1);
 	transition: transform 300ms, background 300ms, color 300ms, width 0.3s, height 0.3s, border 0.3s;
 	z-index: 1000;
+}
+
+#earth {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 480px;
+  height: 0;
+  padding-bottom: 480px;
+  margin: auto;
+  background-color: #fff;
+  background-image: url('https://dl.dropboxusercontent.com/u/3474189/world.svg');
+  background-size: 200%;
+  background-repeat: repeat;
+  border-radius: 50%;
+  animation: earth 8s linear infinite;
+  box-shadow: -35px -50px 200px 10px rgba(0, 0, 0, .8) inset;
+}
+
+@keyframes earth {
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 200% 50%;
 }
