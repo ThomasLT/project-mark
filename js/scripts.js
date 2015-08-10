@@ -32,7 +32,7 @@
 		});
 		
 		var q = function() { $(".active").removeClass("active"); }; 		
-		$('.lvl1, .tab, .lvl2, #cover, #content').clickoutside(q);
+		$('.lvl1, .tab, .lvl2, #cover, #content, #closecontent').clickoutside(q);
 		
 		$('.lvl2 a').on('click', function(){
 			var frame = "/project-mark/"+$(this).attr('data-frame');

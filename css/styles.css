@@ -7,6 +7,13 @@ html, body {
 	height: 100%;
 	background: #FFFCF7;
 	z-index: 1;
+	font-family: Ubuntu;
+}
+#picture {
+	float: left;
+	background: #F59676;
+	height: 100%;
+	width: 300px;
 }
 #content:first-child() {
 	-webkit-margin-before: 0;
