@@ -68,7 +68,7 @@ html, body {
 .menu a.lvl1:hover {
 	border: #F59676 10px solid;
 	transform: scale(1.2);
-	background: #FFFCF7;;
+	background:#FFFCF7;
 	color: #F59676;
 }
 .rawmaterials {
@@ -101,13 +101,13 @@ html, body {
 	position: absolute;
 	width: 25%;
 	padding: 10px;
-	background: #FFFCF7;;
+	background:#FFFCF7;
 }
 /*.rawmaterials:hover::before {
 	content:"Raw Materials";
 	background: #F59676;
 	white-space: nowrap;
-	color: #FFFCF7;;
+	color:#FFFCF7;
 	font-size: 24px;
 	padding: 15px;
 	position: absolute;
@@ -135,7 +135,7 @@ html, body {
 	height: 400px;
 	background: #F59676;
 	padding: 15px 15px 85px 15px;
-	color: #FFFCF7;;
+	color:#FFFCF7;
 	border-radius: 5px;
 	z-index: 500;
 	width: 200px;
@@ -170,7 +170,7 @@ html, body {
 	padding: 15px;
 	left: 0;
 	bottom: 0;
-	color: #FFFCF7;;
+	color:#FFFCF7;
 	margin-top: 5px;
 	background: #2FA88D;	
 	transform: translate(0, -50px) scale(0);
@@ -264,7 +264,7 @@ html, body {
   height: 0;
   padding-bottom: 480px;
   margin: auto;
-  background-color: #FFFCF7;;
+  background-color:#FFFCF7;
   background-image: url('https://dl.dropboxusercontent.com/u/3474189/world.svg');
   background-size: 200%;
   background-repeat: repeat;
