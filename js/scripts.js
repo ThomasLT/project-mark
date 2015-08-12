@@ -1,6 +1,6 @@
     $(document).ready(function(){
+		var background = 0;
 		$('#version').html("Version 0.11")
-
         $('.lvl1').on('click', function(){
 			var offset = $(this).offset().top;
 			var offset = offset+50;
@@ -51,6 +51,20 @@
 			$('#content').html("Loading")
 			$('#frame').removeClass("active");
 			$("#cover").removeClass("active");
+		});
+		$('#background-sw').on('click', function(){
+			if($('body').css("background-image") == "none") {
+				$('body').css("background-image", "url('img/background-01.png')");
+			} else {
+				$('body').css("background-image", "none");
+			}
+		});				
+		$('#animation-sw').on('click', function(){
+			if($('body').css("animation-name") == "none") {
+				$('body').css("animation-name", "background1");
+			} else {
+				$('body').css("animation-name", "none");
+			}
 		});
     })
 	

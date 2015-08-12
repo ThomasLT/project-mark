@@ -261,28 +261,53 @@ html, body {
 }
 
 #earth {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 480px;
-  height: 0;
-  padding-bottom: 480px;
-  margin: auto;
-  background-color:#FFFCF7;
-  background-image: url('https://dl.dropboxusercontent.com/u/3474189/world.svg');
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 480px;
+	height: 0;
+	padding-bottom: 480px;
+	margin: auto;
+	background-color:#FFFCF7;
+	background-image: url('https://dl.dropboxusercontent.com/u/3474189/world.svg');
+	background-size: 200%;
+	background-repeat: repeat;
+	border-radius: 50%;
+	animation: earth 8s linear infinite;
+	box-shadow: -35px -50px 200px 10px rgba(0, 0, 0, .8) inset;
+}
+body {
   background-size: 200%;
   background-repeat: repeat;
-  border-radius: 50%;
-  animation: earth 8s linear infinite;
-  box-shadow: -35px -50px 200px 10px rgba(0, 0, 0, .8) inset;
+  animation-duration: 240s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
-
+#background-sw {
+	position: absolute;
+	top:100px;
+	left: 10px;
+}
+#animation-sw {
+	position: absolute;
+	top: 120px;
+	left: 10px;
+}
 @keyframes earth {
   from {
     background-position: 0% 50%;
   }
   to {
     background-position: 200% 50%;
+}
+}
+@keyframes background1 {
+  from {
+    background-position: 200% 0%;
+  }
+  to {
+    background-position: 0% 0%;
+}
 }
