@@ -30,7 +30,6 @@
 				$(this).parent().children(".tab").focus();
 			}
 		});
-		
 		var q = function() { $(".active").removeClass("active"); }; 		
 		$('.lvl1, .tab, .lvl2, #cover, #content, #closecontent').clickoutside(q);
 		
@@ -52,11 +51,14 @@
 			$('#frame').removeClass("active");
 			$("#cover").removeClass("active");
 		});
+		/*Debugging Scripts*/
 		$('#background-sw').on('click', function(){
 			if($('body').css("background-image") == "none") {
 				$('body').css("background-image", "url('img/background-01.png')");
+				$('header').css("color", "#fff");
 			} else {
 				$('body').css("background-image", "none");
+				$('header').css("color", "#000");
 			}
 		});				
 		$('#animation-sw').on('click', function(){
@@ -66,6 +68,11 @@
 				$('body').css("animation-name", "none");
 			}
 		});
-    })
+		$('#mapexpand-sw').on('click', function(){			
+			$("#earth").toggleClass("map");
+			$(".button").toggleClass("map");
+			$(".menu").toggleClass("map");
+		});
+    });
 	
 	
