@@ -237,7 +237,6 @@ html, body {
 	bottom: 0;
 	left: 0;
 	border-radius: 5px;
-	padding: 10px;
 	background: #FFFCF7;
 	color: #1C110E;
 }
@@ -268,6 +267,8 @@ html, body {
 	width: 150px;
 	height: 100%;
 	background: #F59676;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
 }
 #earth {
 	position: absolute;
