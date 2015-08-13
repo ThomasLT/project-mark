@@ -1,6 +1,6 @@
     $(document).ready(function(){
 		var background = 0;
-		$('#version').html("Version 0.12")
+		$('#version').html("Version 0.13")
         $('.lvl1').on('click', function(){
 			var offset = $(this).offset().top;
 			var offset = offset+50;
@@ -56,9 +56,12 @@
 			if($('body').css("background-image") == "none") {
 				$('body').css("background-image", "url('img/background-01.png')");
 				$('header').css("color", "#fff");
+				$('#animation-sw').css('display', 'block');
 			} else {
 				$('body').css("background-image", "none");
 				$('header').css("color", "#000");
+				$('#animation-sw').css('display', 'none');
+				$('body').css("animation-name", "none");
 			}
 		});				
 		$('#animation-sw').on('click', function(){

@@ -296,20 +296,35 @@ body {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
-#background-sw {
+#debug-menu {
 	position: absolute;
-	top:100px;
-	left: 10px;
+	top: 100px;
+	left: 20px;
+}
+#background-sw {
+	margin: 0px 10px 0px 0px;
+	padding: 5px;
+	float: left;
+	color:#fff;
+	background: #5479B9;
+	text-decoration: none;
 }
 #animation-sw {
-	position: absolute;
-	top: 120px;
-	left: 10px;
+	margin: 0px 10px 0px 0px;
+	padding: 5px;
+	display: none;
+	float: left;
+	color:#fff;
+	background: #5479B9;
+	text-decoration: none;
 }
 #mapexpand-sw {
-	position: absolute;
-	top: 140px;
-	left: 10px;	
+	margin: 0px 10px 0px 0px;
+	padding: 5px;
+	float: left;	
+	color:#fff;
+	background: #5479B9;
+	text-decoration: none;
 }
 /*sphere {
 	position: absolute;
