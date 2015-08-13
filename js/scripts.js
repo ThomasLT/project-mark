@@ -1,6 +1,6 @@
     $(document).ready(function(){
 		var background = 0;
-		$('#version').html("Version 0.11")
+		$('#version').html("Version 0.12")
         $('.lvl1').on('click', function(){
 			var offset = $(this).offset().top;
 			var offset = offset+50;

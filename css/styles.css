@@ -269,6 +269,7 @@ html, body {
 	background: #F59676;
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
+	margin-right:5px;
 }
 #earth {
 	position: absolute;
