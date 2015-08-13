@@ -261,7 +261,7 @@ html, body {
 	transition: transform 300ms, background 300ms, color 300ms, width 0.3s, height 0.3s, border 0.3s;
 	z-index: 1000;
 }
-#closecontent {
+#closecontent:hover; {
 	background: #fff;
 	border: #FFFCF7 5px solid;
 }
