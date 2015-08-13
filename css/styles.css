@@ -262,9 +262,9 @@ html, body {
 	z-index: 1000;
 }
 #closecontent:hover {
-	background: #fff;
+	background: #FFFCF7;
 	border: #FFFCF7 5px solid;
-	color: #FFFCF7;
+	color: #F59676;
 }
 #picture {
 	float: left;
@@ -312,7 +312,7 @@ body {
 	margin: 0px 10px 0px 0px;
 	padding: 5px;
 	float: left;
-	color:#fff;
+	color:#FFFCF7;
 	background: #5479B9;
 	text-decoration: none;
 }
@@ -324,7 +324,7 @@ body {
 	transform: scale(0,1);
 	transform-origin: 0% 0%;
 	float: left;
-	color:#fff;
+	color:#FFFCF7;
 	background: #5479B9;
 	text-decoration: none;
 	margin-right: -200px;
@@ -340,7 +340,7 @@ body {
 	margin: 0px 10px 0px 0px;
 	padding: 5px;
 	float: left;	
-	color:#fff;
+	color:#FFFCF7;
 	background: #5479B9;
 	text-decoration: none;
 }
@@ -420,7 +420,7 @@ body {
 	font-size: 32px;
 	border-radius: 5px;
 	background: #FB6C80;
-	color: #fff;
+	color: #FFFCF7;
 	border-bottom: 5px solid #A3172A;
 	text-decoration: none;
 }
@@ -478,7 +478,7 @@ body {
 		
 	}
 	100% {	
-		background: #fff;
+		background: #FFFCF7;
 		color: #000;
 	}
 }
