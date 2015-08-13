@@ -30,7 +30,7 @@
 				$(this).parent().children(".tab").focus();
 			}
 		});
-		var q = function() { $(".active").removeClass("active"); }; 		
+		var q = function() { $(".menu .active").removeClass("active"); }; 		
 		$('.lvl1, .tab, .lvl2, #cover, #content, #closecontent').clickoutside(q);
 		
 		$('.lvl2 a').on('click', function(){
@@ -56,11 +56,13 @@
 			if($('body').css("background-image") == "none") {
 				$('body').css("background-image", "url('img/background-01.png')");
 				$('header').css("color", "#fff");
-				$('#animation-sw').css('display', 'block');
+				$('#animation-sw').addClass("active");
+				/*$("#animation-sw").animate({padding: "+20px"},{queue:true, duration:500, easing: 'swing'});
+				$("#animation-sw").animate({padding: "-20px"},{queue:true, duration:200, easing: 'swing'});*/
 			} else {
 				$('body').css("background-image", "none");
 				$('header').css("color", "#000");
-				$('#animation-sw').css('display', 'none');
+				$('#animation-sw').removeClass("active");
 				$('body').css("animation-name", "none");
 			}
 		});				

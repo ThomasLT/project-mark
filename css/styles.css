@@ -302,6 +302,8 @@ body {
 	left: 20px;
 }
 #background-sw {
+	text-align: center;
+	width: 150px;
 	margin: 0px 10px 0px 0px;
 	padding: 5px;
 	float: left;
@@ -310,15 +312,26 @@ body {
 	text-decoration: none;
 }
 #animation-sw {
+	text-align: center;
+	width: 150px;
 	margin: 0px 10px 0px 0px;
 	padding: 5px;
-	display: none;
+	transform: scale(0,1);
+	transform-origin: 0% 0%;
 	float: left;
 	color:#fff;
 	background: #5479B9;
 	text-decoration: none;
+	margin-right: -200px;
+	transition: transform .5s, margin .5s;
+}
+#animation-sw.active {
+	transform: scale(1,1);
+	margin-right: 10px;
 }
 #mapexpand-sw {
+	text-align: center;
+	width: 150px;
 	margin: 0px 10px 0px 0px;
 	padding: 5px;
 	float: left;	
@@ -437,5 +450,14 @@ body {
 	}
 	100% {
 		transform: translate(0,-2px);
+	}
+}
+@keyframes flash {
+	0% {
+		
+	}
+	100% {	
+		background: #fff;
+		color: #000;
 	}
 }
