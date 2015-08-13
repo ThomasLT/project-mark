@@ -419,6 +419,9 @@ body {
 	border-bottom: 5px solid #A3172A;
 	text-decoration: none;
 }
+.readmore:hover {
+	border-bottom:2px solid #A3172A;
+}
 #earth.map {
 	position: absolute;
 	top: 0;
