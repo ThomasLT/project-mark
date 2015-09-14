@@ -7,6 +7,10 @@ html, body {
 	height: 100%;
 	background: #FFFCF7;
 	z-index: 1;
+	font-family: Ubuntu;
+}
+#content:first-child() {
+	-webkit-margin-before: 0;
 }
 #close {
 	position:absolute;
@@ -31,7 +35,15 @@ html, body {
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
-.menu .lvl1.clickable {
+.menu .lvl1.clickable {	
+	overflow: hidden;
+	width: 150px;
+	height: 150px;
+	display: block;
+	margin-left: -15px;
+	margin-bottom: -5px;
+}
+.menu svg {
 	display: block;
 	font-size: 25px;
 	color: #FFFCF7;
@@ -41,31 +53,31 @@ html, body {
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	height: 100px;
-	width: 100px;
-	border: #fff 5px solid;
+	height: 120px;
+	width: 120px;
 	border-radius: 50%;
 	text-align: center;
 	line-height: 100px;
-	border: #fff 10px solid;
+	border: #FFFCF7 10px solid;
 	transform: scale(1);
 	transition: transform 300ms, background 300ms, color 300ms, width 0.3s, height 0.3s, border 0.3s;
 	z-index: 600;
+	animation: bob 3s infinite;
 }
 .menu .lvl1.clickable .icon {
 	width: 85px;
 	height: 85px;
 	margin: 5px;
-	fill: #fff;
+	fill: #FFFCF7;
 	transition: fill .3ms;
 }
 .menu .lvl1:hover .icon{
 	fill: #F59676;
 }
-.menu a.lvl1:hover {
+.menu a.lvl1:hover svg {
 	border: #F59676 10px solid;
 	transform: scale(1.2);
-	background: #fff;
+	background:#FFFCF7;
 	color: #F59676;
 }
 .rawmaterials {
@@ -83,7 +95,7 @@ html, body {
 	bottom: 30%;
 	left: 45%;
 }
-.warhouse {
+.warehouse {
 	position: absolute;
 	bottom: 46%;
 	left: 67%;
@@ -93,18 +105,19 @@ html, body {
 	left: 100%;
 	bottom: 65%;
 	transform: translate(-115px);
+	/*margin-left: -115px;*/
 }
 .overview {
 	position: absolute;
 	width: 25%;
 	padding: 10px;
-	background: #fff;
+	background:#FFFCF7;
 }
 /*.rawmaterials:hover::before {
 	content:"Raw Materials";
 	background: #F59676;
 	white-space: nowrap;
-	color: #fff;
+	color:#FFFCF7;
 	font-size: 24px;
 	padding: 15px;
 	position: absolute;
@@ -129,9 +142,10 @@ html, body {
 	position: absolute;
 	bottom: 35px;
 	left: -50px;
+	height: 400px;
 	background: #F59676;
 	padding: 15px 15px 85px 15px;
-	color: #fff;
+	color:#FFFCF7;
 	border-radius: 5px;
 	z-index: 500;
 	width: 200px;
@@ -145,22 +159,19 @@ html, body {
 .tab.bot {
 	bottom: initial;
 	padding: 85px 15px 15px 15px;
-	top: -75px;
+	top: 75px;
 	transform-origin: 50% 0%;
 }
 .lvl2 {
 	position: absolute;
 	left: 0;
-	top: 100%;
 }
 .lvl2.bot {	
-	top: initial;
-	bottom: 100%;
+	top: 100%;
 	margin-bottom: 5px;
 }
 .lvl2.top {	
-	top: initial;
-	bottom: 0%;
+	bottom: 100%;
 	margin-bottom: 5px;
 }
 .lvl2 a, .lvl2 h2 {
@@ -169,14 +180,22 @@ html, body {
 	padding: 15px;
 	left: 0;
 	bottom: 0;
-	color: #fff;
+	color:#FFFCF7;
 	margin-top: 5px;
-	background: orange;	
+	background: #FB6C80;	
 	transform: translate(0, -50px) scale(0);
 	transition: transform 0.3s;
 	transition-delay: 0.3s;
 	z-index: 300;
+	transition: background .3s, padding .3s;
+	text-decoration: none;
+	font-weight: 700;
 }
+.lvl2 a:hover {
+	background: #FBBA6C;
+	padding-left: 30px;
+	color: #1C110E;
+} 
 .lvl2 h2 { margin: 0; font-size: 28px;   font-size: 16px; 	margin-top: 5px;}
 .active .lvl2 a, .active .lvl2 h2 {
 	transform: translate(0, 0) scale(1);
@@ -187,12 +206,11 @@ html, body {
 	left: 25%;
 	width: 50%;
 	height: 50%;
-	border: #F59676 10px solid;
 	background: #F59676;
 	border-radius: 10px;
 	opacity: 0;
 	visibility: hidden;
-	transition: opacity .3s;
+	transition: opacity 1s;
 	z-index: 1000;
 }
 #cover {
@@ -202,10 +220,10 @@ html, body {
 	visibility: hidden;
 	background: #000;
 	z-index: 999;
-	transition: opacity .3;
+	transition: opacity 1;
 }
 #cover.active {
-	opacity: .75;
+	opacity: .9;
 	visibility: visible;
 }
 #frame.active {
@@ -213,11 +231,14 @@ html, body {
 	visibility: visible;
 }
 #content {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-radius: 5px;
+	background: #FFFCF7;
+	color: #1C110E;
 }
 #closecontent {
 	display: block;
@@ -227,43 +248,237 @@ html, body {
 	font-size: 50px;
 	background: #F59676;
 	position: absolute;
-	top: -35px;
-	right: -35px;
+	top: -25px;
+	right: -25px;
 	height: 50px;
 	width: 50px;
-	border: #fff 5px solid;
+	border: #FFFCF7 5px solid;
 	border-radius: 50%;
 	text-align: center;
 	line-height: 50px;
-	border: #fff 5px solid;
+	border: #FFFCF7 5px solid;
 	transform: scale(1);
 	transition: transform 300ms, background 300ms, color 300ms, width 0.3s, height 0.3s, border 0.3s;
 	z-index: 1000;
 }
-
+#closecontent:hover {
+	background: #FFFCF7;
+	border: #F59676 5px solid;
+	color: #F59676;
+}
+#picture {
+	float: left;
+	display: block;
+	width: 150px;
+	height: 100%;
+	background: #F59676;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	margin-right:5px;
+}
 #earth {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 480px;
-  height: 0;
-  padding-bottom: 480px;
-  margin: auto;
-  background-color: #fff;
-  background-image: url('https://dl.dropboxusercontent.com/u/3474189/world.svg');
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 480px;
+	height: 480px;
+	margin: auto;
+	background-color:#FFFCF7;
+	background-image: url('https://dl.dropboxusercontent.com/u/3474189/world.svg');
+	background-size: 200%;
+	background-repeat: repeat;
+	border-radius: 50%;
+	animation: earth 8s linear infinite;
+	box-shadow: -35px -20px 100px 50px rgba(0, 0, 0, .8) inset;
+	transition: width 1s ease-in, height 1s ease-in, background-size 1s ease-in, border-radius .3s 1s ease-out, box-shadow 1s ease-in;
+}
+body {
   background-size: 200%;
   background-repeat: repeat;
-  border-radius: 50%;
-  animation: earth 8s linear infinite;
-  box-shadow: -35px -50px 200px 10px rgba(0, 0, 0, .8) inset;
+  animation-duration: 240s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
-
+#debug-menu {
+	position: absolute;
+	top: 100px;
+	left: 20px;
+}
+#background-sw {
+	text-align: center;
+	width: 150px;
+	margin: 0px 10px 0px 0px;
+	padding: 5px;
+	float: left;
+	color:#FFFCF7;
+	background: #5479B9;
+	text-decoration: none;
+}
+#animation-sw {
+	text-align: center;
+	width: 150px;
+	margin: 0px 10px 0px 0px;
+	padding: 5px;
+	transform: scale(0,1);
+	transform-origin: 0% 0%;
+	float: left;
+	color:#FFFCF7;
+	background: #5479B9;
+	text-decoration: none;
+	margin-right: -200px;
+	transition: transform .5s, margin .5s;
+}
+#animation-sw.active {
+	transform: scale(1,1);
+	margin-right: 10px;
+}
+#mapexpand-sw {
+	text-align: center;
+	width: 150px;
+	margin: 0px 10px 0px 0px;
+	padding: 5px;
+	float: left;	
+	color:#FFFCF7;
+	background: #5479B9;
+	text-decoration: none;
+}
+/*sphere {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 480px;
+	height: 0;
+	padding-bottom: 480px;
+	margin: auto;
+	animation: bob 1.5s ease-in-out infinite;
+}*/
+.menu > div:nth-child(1) svg {
+	animation: bob 1.5s ease-in-out infinite;
+    animation-delay: .3s;
+	width: 80px;
+	height: 80px;
+}
+.menu > div:nth-child(2) svg {
+	animation: bob 1.5s ease-in-out infinite;
+    animation-delay: .2s;
+	width: 100px;
+	height: 100px;
+}
+.menu > div:nth-child(3) svg {
+	animation: bob 1.5s ease-in-out infinite;
+    animation-delay: .5s;
+	width: 160px;
+	height: 160px;
+	margin-left: -25px;
+	margin-bottom: -25px;
+}
+.menu > div:nth-child(4) svg {
+	animation: bob 1.5s ease-in-out infinite;
+    animation-delay: .6s;
+	width: 100px;
+	height: 100px;
+}
+.menu > div:nth-child(5) svg {
+	animation: bob 1.5s ease-in-out infinite;
+    animation-delay: .1s;
+	width: 80px;
+	height: 80px;
+}
+/*.menu.map {
+	position: static;
+	width: 0;
+	height: 0;
+	max-width: none;
+	max-height: none;
+	margin: 0;
+	top: 0;
+	left: 0;
+	transform: translate(0, 0);
+}*/
+.button {
+	transition: left 2s;
+}
+.button.map {
+	left: -1000%;
+}
+.menu.map .lvl1.clickable {
+	position: static;
+}
+.menu.map .retail {
+	transform: translate(0,0);
+}
+.readmore {
+	display: block;
+	padding: 10px;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	font-size: 32px;
+	border-radius: 5px;
+	background: #FB6C80;
+	color: #FFFCF7;
+	border-bottom: 5px solid #A3172A;
+	text-decoration: none;
+}
+.readmore:hover {
+	border-bottom:3px solid #A3172A;
+}
+#earth.map {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	padding-bottom: 0;
+	margin: auto;
+	background-color: #FFFCF7;
+	background-image: url('https://dl.dropboxusercontent.com/u/3474189/world.svg');
+	background-size: 100%;
+	background-position: 0% 0%;
+	background-repeat: no-repeat;
+	border-radius: 0;
+	animation: none;
+	box-shadow: none;
+}
 @keyframes earth {
-  from {
-    background-position: 0% 50%;
-  }
-  to {
-    background-position: 200% 50%;
+	from {
+		background-position: 0% 50%;
+	}
+	to {
+		background-position: 200% 50%;
+	}
+}
+@keyframes background1 {
+	from {
+		background-position: 200% 0%;
+	}
+	to {
+		background-position: 0% 0%;
+	}
+}
+@keyframes bob {
+	0% {
+		transform: translate(0,-2px);
+	}
+	50% {
+		transform: translate(0,0px);
+	}
+	100% {
+		transform: translate(0,-2px);
+	}
+}
+@keyframes flash {
+	0% {
+		
+	}
+	100% {	
+		background: #FFFCF7;
+		color: #000;
+	}
 }
