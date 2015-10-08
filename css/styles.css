@@ -444,7 +444,7 @@ body {
     height: 75px;
 }
 .lightbox p {
-    float:left;
+    /*float:left;*/
 }
 #earth.map {
 	position: absolute;
