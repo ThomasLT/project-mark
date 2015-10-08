@@ -1,5 +1,14 @@
+p {
+    font-size: 16px;
+    line-height: 24px;
+}
+.tab > p {
+    font-size: 18px;
+    line-height: 24px;
+}
 header {
 	position:absolute;
+    color: #fff;
 	line-height: 10px;
 	padding: 10px;
 }
@@ -8,6 +17,9 @@ html, body {
 	background: #FFFCF7;
 	z-index: 1;
 	font-family: Ubuntu;
+}
+body {
+    background-image: url('../img/background-01.png');
 }
 #content:first-child() {
 	-webkit-margin-before: 0;
@@ -426,6 +438,13 @@ body {
 }
 .readmore:hover {
 	border-bottom:3px solid #A3172A;
+}
+.thumbnail {
+    width: 75px;
+    height: 75px;
+}
+.lightbox p {
+    float:left;
 }
 #earth.map {
 	position: absolute;

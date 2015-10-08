@@ -6,9 +6,10 @@
 		<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
 		<link href="css/normal.css" rel="stylesheet" />
 		<link href="css/styles.css" rel="stylesheet" />
-		<script src="js/jquery-1.11.0.min.js"></script>
+        <link href="css/lightbox.css" rel="stylesheet" />
+        <script src="js/jquery-1.11.0.min.js"></script>
 		<script src="js/scripts.js"></script>
-		<script src="js/jquery.ba-outside-events.min.js"></script>
+        <script src="js/jquery.ba-outside-events.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="//favicon.ico" type="image/x-icon" sizes="16x16">
         <!--[if lt IE 9]>
@@ -37,8 +38,8 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel lobortis sem. Nam ultricies posuere augue sed cursus. Sed dapibus laoreet massa pellentesque tincidunt. Integer ut lobortis ex, id porttitor nisl. Phasellus ullamcorper tortor a interdum feugiat.</p>
 			<div class="lvl2">
 				<h2>▼</h2>
-				<a href="#" data-frame="extraction.html">Extraction (try me)</a>
-				<a href="#" data-frame="agriculture.html">Agriculture</a>
+				<a href="#" data-frame="raw-materials/extraction.html">Extraction (try me)</a>
+				<a href="#" data-frame="raw-materials/agriculture.html">Agriculture</a>
 			</div>
 		</div>
 	</div>
@@ -54,9 +55,9 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel lobortis sem. Nam ultricies posuere augue sed cursus. Sed dapibus laoreet massa pellentesque tincidunt. Integer ut lobortis ex, id porttitor nisl. Phasellus ullamcorper tortor a interdum feugiat.</p>
 			<div class="lvl2">
 				<h2>▼</h2>
-				<a href="#" data-frame="engineering.html">Engineering</a>
-				<a href="#" data-frame="robotics.html">Robotics</a>
-				<a href="#" data-frame="quality.html">Quality</a>
+				<a href="#" data-frame="manufacturing/engineering.html">Engineering</a>
+				<a href="#" data-frame="manufacturing/robotics.html">Robotics</a>
+				<a href="#" data-frame="manufacturing/quality.html">Quality</a>
 			</div>
 		</div>
 	</div>
@@ -72,10 +73,10 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel lobortis sem. Nam ultricies posuere augue sed cursus. Sed dapibus laoreet massa pellentesque tincidunt. Integer ut lobortis ex, id porttitor nisl. Phasellus ullamcorper tortor a interdum feugiat. Donec iaculis condimentum turpis ut auctor.</p>
 			<div class="lvl2">
 				<h2>▼</h2>
-				<a href="#" data-frame="manufacturer.html">Manufacturer to Shipping Port</a>
-				<a href="#" data-frame="containerisation.html">Containerisation</a>
-				<a href="#" data-frame="loading.html">Loading/Unloading</a>
-				<a href="#" data-frame="containerisation-rd.html">Containerisation Rd/Rail</a>	
+				<a href="#" data-frame="transport/manufacturer.html">Manufacturer to Shipping Port</a>
+				<a href="#" data-frame="transport/containerisation.html">Containerisation</a>
+				<a href="#" data-frame="transport/loading.html">Loading/Unloading</a>
+				<a href="#" data-frame="transport/containerisation-rd.html">Containerisation Rd/Rail</a>	
 			</div>
 		</div>
 	</div>
@@ -95,7 +96,7 @@
 				<a href="#" data-frame="warehousing/storage-of-goods.html">Storage of Goods</a>
 				<a href="#" data-frame="warehousing/picking-goods.html">Picking Goods</a>
 				<a href="#" data-frame="warehousing/pick-to-box.html">Pick To Box</a>
-				<a href="#" data-frame="warehousing/dispatching-goods">Dispatching Goods</a>
+				<a href="#" data-frame="warehousing/dispatching-goods.html">Dispatching Goods</a>
 			</div>
 		</div>
 	</div>
@@ -112,18 +113,16 @@
 			tincidunt. Integer ut lo bortis ex, id porttitor nisl.</p>
 			<div class="lvl2">
 				<h2>▼</h2>
-				<a href="#" data-frame="retail-transport.html">Retail Transport</a>
-				<a href="#" data-frame="putaway.html">Putaway</a>
-				<a href="#" data-frame="home-delivery.html">Home Delivery</a>
-				<a href="#" data-frame="grocery-delivery.html">Grocery Delivery</a>
-				<a href="#" data-frame="shopping-in-store.html">Shopping in Store</a>
+				<a href="#" data-frame="retail/retail-transport.html">Retail Transport</a>
+				<a href="#" data-frame="retail/putaway.html">Putaway</a>
+				<a href="#" data-frame="retail/home-delivery.html">Home Delivery</a>
+				<a href="#" data-frame="retail/grocery-delivery.html">Grocery Delivery</a>
+				<a href="#" data-frame="retail/shopping-in-store.html">Shopping in Store</a>
 			</div>
 		</div>		
 	</div>
 	</div>
 	<div id="debug-menu">
-	<a href="#" id="background-sw">Switch BG</a>
-	<a href="#" id="animation-sw">Animation On/Off</a>
 	<a href="#" id="mapexpand-sw">Map Expand Test</a>
 	</div>
 	<div id="cover"></div>
@@ -132,6 +131,6 @@
 			<div id="content">			
 			</div>
 		</div>
-	
+	<script src="js/lightbox.js"></script>
 	</body>
 </html>
