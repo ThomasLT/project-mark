@@ -216,8 +216,8 @@ body {
 	position: absolute;
 	top: 25%;
 	left: 25%;
-	width: 50%;
-	height: 50%;
+	width: 960px;
+	height: 500px;
 	background: #F59676;
 	border-radius: 10px;
 	opacity: 0;
