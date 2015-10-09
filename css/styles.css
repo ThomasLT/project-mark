@@ -511,18 +511,22 @@ body {
         backface-visibility: hidden;
         transform: translateZ(50);
     }*/
+    .transport .tab {
+        height: 240px;
+        padding: 15px 15px 125px 15px;
+    }
     p {
         font-size: 14px;
         line-height: 20px;
     }
     .tab {
         height: 265px;
-        padding: 15px 15px 125px 15px;
+        padding: 15px 15px 85px 15px;
     }
     .tab.bot {
         padding: 55px 15px 15px 15px;
     }
-    tab > h2 {
+    h2 {
         margin: 0;
         -webkit-margin-before: 0;
         -webkit-margin-after: 0;
