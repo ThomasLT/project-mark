@@ -2,10 +2,6 @@ p {
     font-size: 16px;
     line-height: 24px;
 }
-.tab > p {
-    font-size: 18px;
-    line-height: 24px;
-}
 header {
 	position:absolute;
     color: #fff;
@@ -36,7 +32,7 @@ body {
 	width: 60%;
 }
 .menu {
-	position: relative;
+	position: relative;    
 	width: 95%;
 	height: 95%;
 	max-width: 960px;
@@ -96,6 +92,7 @@ body {
 	position: absolute;
 	bottom: 10%;
 	left: 0%;
+    z-index 
 }
 .manufacture {
 	position: absolute;
@@ -167,6 +164,10 @@ body {
 }
 .tab.active {
 	transform: Scale(1);
+    z-index 9999;
+}
+.lvl1.active tab {
+    z-index: 9999;
 }
 .tab.bot {
 	bottom: initial;
@@ -214,8 +215,10 @@ body {
 }
 #frame {
 	position: absolute;
-	top: 25%;
-	left: 25%;
+	top: 50%;
+    margin-top: -250px;
+	left: 50%;
+    margin-left: -480px;
 	width: 960px;
 	height: 500px;
 	background: #F59676;
@@ -500,4 +503,36 @@ body {
 		background: #FFFCF7;
 		color: #000;
 	}
+}
+@media (min-width: 0px) and (max-width: 1380px) {
+  /*  .menu {
+        transform: scale(0.8);
+        transform-origin: -400% -400%;
+        backface-visibility: hidden;
+        transform: translateZ(50);
+    }*/
+    p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .tab {
+        height: 265px;
+        padding: 15px 15px 125px 15px;
+    }
+    .tab.bot {
+        padding: 55px 15px 15px 15px;
+    }
+    tab > h2 {
+        margin: 0;
+        -webkit-margin-before: 0;
+        -webkit-margin-after: 0;
+    }
+    .menu svg {
+        width: 50px;
+        height: 50px;
+    }
+    .lvl2 > a {
+        height: 7px;
+        line-height: 7px;
+    }
 }

@@ -2,33 +2,33 @@ $(document).ready(function(){
 var background = 0;
 $('#version').html("Version 0.13")
      $('.lvl1').on('click', function(){
-	var offset = $(this).offset().top;
-	var offset = offset+50;
-	var height = $('html').height();
-	var height =  height/2;
-	if (offset < height) {
-		$(this).parent().children(".tab").addClass("bot");      
-		$(this).parent().children(".tab").children(".lvl2").addClass("top");
-		var arrow = $(this).parent().children('.tab').children('.lvl2').children('h2');
-		arrow.appendTo(arrow.parent());
-		arrow.html("▲");
-	} else {     
-		$(this).parent().children(".tab").children(".lvl2").addClass("bot");
-	}
-	var Overview = $(this).attr('data-tab');
-	var Overview = "."+Overview;
-	var object = $(this);
-	if ($(this).hasClass("active")) {
-		$(".active").removeClass("active");
-	} else {	
-		$(".tab").removeClass("active");
-		$(".lvl1.clickable").removeClass("active");
-		$(Overview).addClass("active");
-		$(this).addClass("active");	
-		$(this).parent().children(".tab").addClass("active");       
-		$(this).parent().addClass("active");
-		$(this).parent().children(".tab").focus();
-	}
+        var offset = $(this).offset().top;
+        var offset = offset+50;
+        var height = $('html').height();
+        var height =  height/2;
+        if (offset < height) {
+            $(this).parent().children(".tab").addClass("bot");      
+            $(this).parent().children(".tab").children(".lvl2").addClass("top");
+            var arrow = $(this).parent().children('.tab').children('.lvl2').children('h2');
+            arrow.appendTo(arrow.parent());
+            arrow.html("▲");
+        } else {     
+            $(this).parent().children(".tab").children(".lvl2").addClass("bot");
+        }
+        var Overview = $(this).attr('data-tab');
+        var Overview = "."+Overview;
+        var object = $(this);
+        if ($(this).hasClass("active")) {
+            $(".active").removeClass("active");
+        } else {	
+            $(".tab").removeClass("active");
+            $(".lvl1.clickable").removeClass("active");
+            $(Overview).addClass("active");
+            $(this).addClass("active");	
+            $(this).parent().children(".tab").addClass("active");       
+            $(this).parent().addClass("active");
+            $(this).parent().children(".tab").focus();
+        }
 });
 // Set function for click outside
 var RemoveActive = function() { $(".menu .active").removeClass("active"); };
