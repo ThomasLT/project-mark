@@ -1,6 +1,23 @@
 p {
     font-size: 16px;
     line-height: 24px;
+    margin: 0;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+}
+p + p {
+    margin-top: 1px;
+}
+h2 { 
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    margin: 0 0 10px 0;
+}
+#content h2 {
+    margin: 20px;
+}
+#content p {
+    margin: 20px;
 }
 header {
 	position:absolute;
@@ -566,11 +583,6 @@ body {
     }
     .tab.bot {
         padding: 55px 15px 15px 15px;
-    }
-    h2 {
-        margin: 0;
-        -webkit-margin-before: 0;
-        -webkit-margin-after: 0;
     }
     .menu svg {
         width: 50px;
