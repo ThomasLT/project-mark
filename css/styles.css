@@ -13,11 +13,27 @@ h2 {
     -webkit-margin-after: 0;
     margin: 0 0 10px 0;
 }
+h2 {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    margin: 0 0 10px 0;    
+}
 #content h2 {
     margin: 20px;
 }
 #content p {
     margin: 20px;
+}
+ol {
+    font-weight: 700;
+}
+ol li {
+    list-style-position: inside;   
+    
+}
+ol li span {
+    line-height: 28px;
+    font-weight: 500;
 }
 header {
 	position:absolute;
@@ -70,7 +86,6 @@ body {
 }
 .menu svg {
 	display: block;
-	font-size: 25px;
 	color: #FFFCF7;
 	text-decoration: none;
 	font-size: 50px;
@@ -207,7 +222,7 @@ body {
 .lvl2 a, .lvl2 h2 {
 	display: block;
 	width: 200px;
-	padding: 15px;
+	padding: 8px 15px;
 	left: 0;
 	bottom: 0;
 	color:#FFFCF7;
@@ -220,13 +235,14 @@ body {
 	transition: background .3s, padding .3s;
 	text-decoration: none;
 	font-weight: 700;
+    font-size: 16px;
 }
 .lvl2 a:hover {
 	background: #FBBA6C;
 	padding-left: 30px;
 	color: #1C110E;
 } 
-.lvl2 h2 { margin: 0; font-size: 28px;   font-size: 16px; 	margin-top: 5px;}
+.lvl2 h2 { margin: 0; font-size: 8px;   font-size: 16px; 	margin-top: 5px;}
 .active .lvl2 a, .active .lvl2 h2 {
 	transform: translate(0, 0) scale(1);
 }
@@ -479,7 +495,7 @@ body {
     border-color: #F59676;
     color: #F59676;
 }
-.thumbimg p {
+#content .thumbimg p {
     display: block;
     margin: 0;
     width: 150px;
@@ -503,6 +519,7 @@ body {
     border-color: #fff;
     color: #fff;
     transition: background 300ms, border-color 300ms, color 300ms;
+    width: 75%
 }
 .lightbox p {
     /*float:left;*/
