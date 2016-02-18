@@ -592,7 +592,7 @@ body {
         transform: translateZ(50);
     }*/
     .transport .tab {
-        height: 240px;
+        height: 235px;
         padding: 15px 15px 125px 15px;
     }
     p {
@@ -600,11 +600,12 @@ body {
         line-height: 20px;
     }
     .tab {
-        height: 265px;
+        height: 255px;
         padding: 15px 15px 85px 15px;
     }
     .tab.bot {
-        padding: 55px 15px 15px 15px;
+        padding: 70px 15px 15px 15px;
+		top: 80px;
     }
     .menu svg {
         width: 50px;
@@ -614,4 +615,15 @@ body {
         height: 7px;
         line-height: 7px;
     }
+	.menu svg {
+		border: #FFFCF7 5px solid;
+	}
+	.menu a.lvl1:hover svg {
+		border: #F59676 5px solid;
+	}
+	.menu > div:nth-child(1) svg { width: 60px; height: 60px;	margin-left: 25px;}
+	.menu > div:nth-child(2) svg {  width: 80px; height: 80px; margin-left: 15px;}
+	.menu > div:nth-child(3) svg { width: 100px; height: 100px; margin-left: 5px; margin-bottom: 0px;}
+	.menu > div:nth-child(4) svg { width: 80px; height: 80px; 	margin-left: 15px;}
+ 	.menu > div:nth-child(5) svg { width: 60px; height: 60px;	margin-left: 25px;}
 }
