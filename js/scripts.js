@@ -6,15 +6,15 @@ $('#version').html("Version 0.16")
         var offset = offset+50;
         var height = $('html').height();
         var height =  height/2;
-        if (offset < height) {
-            $(this).parent().children(".tab").addClass("bot");      
-            $(this).parent().children(".tab").children(".lvl2").addClass("top");
+        /*if (offset < height) {
+           /* $(this).parent().children(".tab").addClass("bot");      
+            $(this).parent().children(".tab").children(".lvl2").addClass("top"); 
             var arrow = $(this).parent().children('.tab').children('.lvl2').children('h2');
             arrow.appendTo(arrow.parent());
             arrow.html("▲");
         } else {     
             $(this).parent().children(".tab").children(".lvl2").addClass("bot");
-        }
+        }*/
         var Overview = $(this).attr('data-tab');
         var Overview = "."+Overview;
         var object = $(this);
