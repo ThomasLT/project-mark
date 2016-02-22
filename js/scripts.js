@@ -83,17 +83,6 @@ $('#mapexpand-sw').on('click', function(){
 	$(".button").toggleClass("map");
 	$(".menu").toggleClass("map");
 });
-$("embed").attr("wmode", "opaque");
-var embedTag;
-$("embed").each(function(i) {
-       embedTag = $(this).attr("outerHTML");
-       if ((embedTag != null) && (embedTag.length > 0)) {
-               embedTag = embedTag.replace(/embed /gi, "embed wmode="opaque" ");
-               $(this).attr("outerHTML", embedTag);
-       } else {
-               $(this).wrap("<div></div>");
-       }
 });
- });
 	
 	
