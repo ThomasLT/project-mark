@@ -1,4 +1,4 @@
-$(document).ready(function(){
+﻿$(document).ready(function(){
 var background = 0;
 $('#version').html("Version 0.16")
      $('.lvl1').on('click', function(){
@@ -82,6 +82,17 @@ $('#mapexpand-sw').on('click', function(){
 	$("#earth").toggleClass("map");
 	$(".button").toggleClass("map");
 	$(".menu").toggleClass("map");
+});
+$("embed").attr("wmode", "opaque");
+var embedTag;
+$("embed").each(function(i) {
+       embedTag = $(this).attr("outerHTML");
+       if ((embedTag != null) && (embedTag.length > 0)) {
+               embedTag = embedTag.replace(/embed /gi, "embed wmode="opaque" ");
+               $(this).attr("outerHTML", embedTag);
+       } else {
+               $(this).wrap("<div></div>");
+       }
 });
  });
 	

@@ -46,7 +46,6 @@ html, body {
 	background: #FFFCF7;
 	z-index: 1;
 	font-family: Ubuntu;
-	overflow: hidden;
 }
 body {
     background-image: url('../img/background-01.png');
@@ -627,14 +626,35 @@ body {
 	.menu > div:nth-child(4) svg { width: 80px; height: 80px; 	margin-left: 15px;}
  	.menu > div:nth-child(5) svg { width: 60px; height: 60px;	margin-left: 25px;}
 }
-@media (min-width0px) and (max-width1124px) {
-	.retail {
-		left: 95%;
-		bottom: 65%;
-		transform: translate(-115px);
-	}
-	.rawmaterials {
-		bottom: 10%;
-		left: 0%;
- 	}
+@media (min-width: 0px) and (max-width: 1124px) {
+.rawmaterials {
+	position: absolute;
+	bottom: 10%;
+	left: 5%;
+}
+.manufacture {
+	position: absolute;
+	bottom: 17%;
+	left: 23%;
+}
+.transport {
+	position: absolute;
+	bottom: 30%;
+	left: 45%;
+}
+.warehouse {
+	position: absolute;
+	bottom: 47%;
+	left: 64%;
+}
+.retail {
+	position: absolute;
+	left: 95%;
+	bottom: 67%;
+	transform: translate(-115px);
+	/*margin-left: -115px;*/
+}
+}
+object {
+z-index: 1;
 }
