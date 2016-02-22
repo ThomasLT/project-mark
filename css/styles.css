@@ -124,7 +124,6 @@ body {
 	position: absolute;
 	bottom: 10%;
 	left: 0%;
-    z-index 
 }
 .manufacture {
 	position: absolute;
@@ -626,4 +625,33 @@ body {
 	.menu > div:nth-child(3) svg { width: 100px; height: 100px; margin-left: 5px; margin-bottom: 0px;}
 	.menu > div:nth-child(4) svg { width: 80px; height: 80px; 	margin-left: 15px;}
  	.menu > div:nth-child(5) svg { width: 60px; height: 60px;	margin-left: 25px;}
+}
+@media (min-width: 0px) and (max-width: 1124px) {
+.rawmaterials {
+	position: absolute;
+	bottom: 10%;
+	left: 5%;
+}
+.manufacture {
+	position: absolute;
+	bottom: 17%;
+	left: 23%;
+}
+.transport {
+	position: absolute;
+	bottom: 30%;
+	left: 45%;
+}
+.warehouse {
+	position: absolute;
+	bottom: 47%;
+	left: 64%;
+}
+.retail {
+	position: absolute;
+	left: 95%;
+	bottom: 67%;
+	transform: translate(-115px);
+	/*margin-left: -115px;*/
+}
 }
