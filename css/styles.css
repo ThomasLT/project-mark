@@ -426,10 +426,10 @@ body {
 .menu > div:nth-child(3) svg {
 	animation: bob 1.5s ease-in-out infinite;
     animation-delay: .5s;
-	width: 160px;
-	height: 160px;
-	margin-left: -25px;
-	margin-bottom: -25px;
+	width: 150px;
+	height: 150px;
+	margin-left: -15px;
+	margin-bottom: -15px;
 }
 .menu > div:nth-child(4) svg {
 	animation: bob 1.5s ease-in-out infinite;
